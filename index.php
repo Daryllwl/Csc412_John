@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> 
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>PC Build: Cookie Cutter 2015</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style>
+
+            /* Carousel base class */
+            .carousel {
+                margin-bottom: 60px;
+            }
+            /* Since positioning the image, we need to help out the caption */
+            .carousel-caption {
+                z-index: 1;
+            }
+
+            /* Declare heights because of positioning of img element */
+            .carousel .item {
+                height: 450px;
+                background-color:#555;
+            }
+            .carousel img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-height: 400px;
+            }
+
+            <!-- END CAROUSEL -->
+
+            hr {
+                width: 60%;
+                background-color: #42494F;
+                border-color: #42494F;
+            }
+
+            h1{
+                color: white;
+            }
+
+            <!-- TAAAABBBBLEEEEEEE -->
+
+            body{
+                background: #303030;
+            }
+
+            #pricing-table {
+                margin: 100px auto;
+                text-align: center;
+                width: 1336px; /* total computed width = 222 x 3 + 226 */
+            }
+
+            #pricing-table .plan {
+                font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+                text-shadow: 0 1px rgba(255,255,255,.8);        
+                background: #fff;      
+                border: 1px solid #ddd;
+                color: #333;
+                padding: 20px;
+                width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */      
+                float: left;
+                position: relative;
+            }
+
+            #pricing-table #most-popular {
+                z-index: 2;
+                top: -13px;
+                border-width: 3px;
+                padding: 30px 20px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                -moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+                -webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+                box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);    
+            }
+
+            #pricing-table .plan:nth-child(1) {
+                -moz-border-radius: 5px 0 0 5px;
+                -webkit-border-radius: 5px 0 0 5px;
+                border-radius: 5px 0 0 5px;        
+            }
+
+            #pricing-table .plan:nth-child(3) {
+                -moz-border-radius: 0 5px 5px 0;
+                -webkit-border-radius: 0 5px 5px 0;
+                border-radius: 0 5px 5px 0;        
+            }
+
+            /* --------------- */	
+
+            #pricing-table h3 {
+                font-size: 20px;
+                font-weight: normal;
+                padding: 20px;
+                margin: -20px -20px 50px -20px;
+                background-color: #eee;
+                background-image: -moz-linear-gradient(#fff,#eee);
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+                background-image: -webkit-linear-gradient(#fff, #eee);
+                background-image: -o-linear-gradient(#fff, #eee);
+                background-image: -ms-linear-gradient(#fff, #eee);
+                background-image: linear-gradient(#fff, #eee);
+            }
+
+            #pricing-table #most-popular h3 {
+                background-color: #ddd;
+                background-image: -moz-linear-gradient(#eee,#ddd);
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));    
+                background-image: -webkit-linear-gradient(#eee, #ddd);
+                background-image: -o-linear-gradient(#eee, #ddd);
+                background-image: -ms-linear-gradient(#eee, #ddd);
+                background-image: linear-gradient(#eee, #ddd);
+                margin-top: -30px;
+                padding-top: 30px;
+                -moz-border-radius: 5px 5px 0 0;
+                -webkit-border-radius: 5px 5px 0 0;
+                border-radius: 5px 5px 0 0; 		
+            }
+
+            #pricing-table .plan:nth-child(1) h3 {
+                -moz-border-radius: 5px 0 0 0;
+                -webkit-border-radius: 5px 0 0 0;
+                border-radius: 5px 0 0 0;       
+            }
+
+            #pricing-table .plan:nth-child(6) h3 {
+                -moz-border-radius: 0 5px 0 0;
+                -webkit-border-radius: 0 5px 0 0;
+                border-radius: 0 5px 0 0;       
+            }	
+
+            #pricing-table h3 span {
+                display: block;
+                font: bold 25px/100px Georgia, Serif;
+                color: #777;
+                background: #fff;
+                border: 5px solid #fff;
+                height: 100px;
+                width: 100px;
+                margin: 10px auto -65px;
+                -moz-border-radius: 100px;
+                -webkit-border-radius: 100px;
+                border-radius: 100px;
+                -moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+                -webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+                box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+            }
+
+            /* --------------- */
+
+            #pricing-table ul {
+                margin: 20px 0 0 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            #pricing-table li {
+                border-top: 1px solid #ddd;
+                padding: 10px 0;
+            }
+
+            /* --------------- */
+
+            #pricing-table .signup {
+                position: relative;
+                padding: 8px 20px;
+                margin: 20px 0 0 0;  
+                color: #fff;
+                font: bold 14px Arial, Helvetica;
+                text-transform: uppercase;
+                text-decoration: none;
+                display: inline-block;       
+                background-color: #72ce3f;
+                background-image: -moz-linear-gradient(#72ce3f, #62bc30);
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#72ce3f), to(#62bc30));    
+                background-image: -webkit-linear-gradient(#72ce3f, #62bc30);
+                background-image: -o-linear-gradient(#72ce3f, #62bc30);
+                background-image: -ms-linear-gradient(#72ce3f, #62bc30);
+                background-image: linear-gradient(#72ce3f, #62bc30);
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;     
+                text-shadow: 0 1px 0 rgba(0,0,0,.3);        
+                -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+                -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+                box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+            }
+
+            #pricing-table .signup:hover {
+                background-color: #62bc30;
+                background-image: -moz-linear-gradient(#62bc30, #72ce3f);
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#62bc30), to(#72ce3f));      
+                background-image: -webkit-linear-gradient(#62bc30, #72ce3f);
+                background-image: -o-linear-gradient(#62bc30, #72ce3f);
+                background-image: -ms-linear-gradient(#62bc30, #72ce3f);
+                background-image: linear-gradient(#62bc30, #72ce3f); 
+            }
+
+            #pricing-table .signup:active, #pricing-table .signup:focus {
+                background: #62bc30;       
+                top: 2px;
+                -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+                -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+                box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset; 
+            }
+
+            /* --------------- */
+
+            .clear:before, .clear:after {
+                content:"";
+                display:table
+            }
+
+            .clear:after {
+                clear:both
+            }
+
+            .clear {
+                zoom:1
+            }
+
+            <!-- END TAAABLLEEE -->
+        </style>
+
+    </head>
+
+    <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">Cookie Cutter '15</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">Part list</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Comments</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Intro Section -->
+        <section id="intro" class="intro-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Carousel
+                        ================================================== -->
+                        <div id="myCarousel" class="carousel slide">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="http://i.imgur.com/HpzcNDD.png" style="width:100%" class="img-responsive">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="http://i.imgur.com/T3X5304.png" class="img-responsive">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="http://i.imgur.com/QUYz9xT.png" class="img-responsive">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="icon-prev"></span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="icon-next"></span>
+                            </a>  
+                        </div>
+                        <!-- /.carousel -->
+
+                        <h1>PC Build: Cookie Cutter '15</h1>
+                        <h4>Inspired by PCPartPicker</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo non mi aliquam fringilla vel vitae nulla. Aliquam vitae turpis ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris et hendrerit ligula. In suscipit justo ipsum, eget maximus ipsum laoreet sed. Proin rutrum vehicula felis, sed vulputate ante consequat vel. In tortor nisi, sagittis viverra enim vel, mattis fringilla velit. Morbi molestie ipsum auctor, fringilla libero at, condimentum leo. Fusce ullamcorper leo vel tortor consectetur sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam egestas bibendum arcu, id convallis lectus hendrerit vulputate. Integer tincidunt eros et magna tincidunt, non finibus lorem hendrerit. Donec augue metus, facilisis a nibh at, imperdiet fringilla eros. Vestibulum mattis aliquam justo, vel pharetra mi placerat ut.</p>
+                        <h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Part List</h1>
+                    <h4>and why I regret them</h4>
+                    <h6>... who needs storage anyway</h6>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo non mi aliquam fringilla vel vitae nulla. Aliquam vitae turpis ex. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <div id="pricing-table" class="clear">
+                        <div class="plan">
+                            <h3>Case<span>$.25</span></h3>
+                            <a class="signup" target="_blank" href="https://www.nzxt.com/products/h440-black">NZXT</a>         
+                            <ul>
+                                <li><b>NZXT H440</b></li>
+                                <li>ITX, M-ATX, ATX</li>
+                                <li>2x USB 2.0, 2x USB 3.0</li>
+                                <li>7 Expansion Slots</li>			
+                            </ul> 
+                        </div>
+                        <div class="plan">
+                            <h3>Motherboard<span>$Free</span></h3>
+                            <a class="signup" target="_blank" href="https://www.amazon.com/MSI-Gaming-Skylake-Motherboard-H170A/dp/B014YN673M">Amazon</a>        
+                            <ul>
+                                <li><b>MSI H170A</b></li>
+                                <li><b>Socket</b> 1151</li>
+                                <li><b>Chipset Intel® H170</b></li>
+                                <li><b>DDR4</b> 2133 MHz</li>			
+                            </ul>    
+                        </div>
+                        <div class="plan">
+                            <h3>GPU<span>-$3</span></h3>
+                            <a class="signup" target="_blank" href="https://www.bhphotovideo.com/c/product/1162657-REG/msi_r9_390_gaming_8g_radeon_r9_390x_gaming.html">B&Hp</a>
+                            <ul>
+                                <li><b>Radeon™ R9 390</li>
+                                <li><b>Core Clock</b> 1060MHz</li>
+                                <li><b>8192MB GDDR5</b></li>
+                                <li><b>CrossFire™</b> supported</li>			
+                            </ul>
+                        </div>
+                        <div class="plan">
+                            <h3>CPU<span>$17</span></h3>
+                            <a class="signup" target="_blank" href="https://www.amazon.com/Intel-Skylake-Desktop-Processor-BX80662I56500/dp/B010T6CWI2">Amazon</a>
+                            <ul>
+                                <li><b>Intel®</b> i5-6500 Skylake</li>
+                                <li><b>LGA</b> 1151</li>
+                                <li><b>DDR4</b> Support</li>
+                                <li><b>100 Series Chipset</b></li>			
+                            </ul>
+                        </div>
+                        <div class="plan">
+                            <h3>RAM<span>$19.95</span></h3>
+                            <a class="signup" target="_blank" href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820104531">Newegg</a>
+                            <ul>
+                                <li><b>HyperX Fury 16GB</b></li>
+                                <li><b>2 x 8GB</b> 288-PIN</li>
+                                <li><b>DDR4 2133</b></li>
+                                <li><b>Timing</b> 14-14-14 <br></li>			
+                            </ul>
+                        </div>
+                        <div class="plan">
+                            <h3>Power Supply<span>???</span></h3>
+                            <a class="signup" target="_blank" href="https://www.amazon.com/dp/B00IKDETOW/ref=twister_B01LXKQ07C?_encoding=UTF8&psc=1">Amazon</a>		
+                            <ul>
+                                <li><b>EVGA 750 G2</b></li>
+                                <li><b>80+ GOLD</b></li>
+                                <li><b>Fully Modular</b></li>
+                                <li><b>10 Year Warranty</b></li>			
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Leave a comment!</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
