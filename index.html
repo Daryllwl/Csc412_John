@@ -424,15 +424,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Leave a comment!</h1>
+                    <h1>Leave a comment!</h1>                               
                     <hr>
+                    
+                    <form action="mydata.php" method="post">
+                        Name: <input type="text" name="Name"><br />
+                        Comment: <input type="text" name="Quote"><br />
+                        <input type ="submit" name="submit">
+                    </form>
+                    
                     <?php
+                    if (isset($_POST['submit'])){
+
                     $con = mysql_connect("localhost", "csc412", "csc412");
                     if (!$con){
                     die("can not connect: " . mysql_error());
                     }
-
+                    
+                    mysql_select_db("dwlguests", $con);
+                    
+                    $sql="INSERT INTO dwlguests(Name,Quote) VALUES ('$_POST[Name]',('$_POST[Quote]')";
+                    
+                    mysql_query($sql, $con);
                     mysql_close($con);
+                    }
                     ?>
                 </div>
             </div>
