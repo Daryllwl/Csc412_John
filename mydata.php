@@ -18,5 +18,13 @@ if (mysqli_connect_error()) {
 }
 echo "Connected successfully";
 ?>
+
+my
+    
+    
+    
+    
+ 
+<?php $conn->close(); ?>   
 </body>
 <html>
