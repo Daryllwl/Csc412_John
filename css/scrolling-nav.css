@@ -32,10 +32,10 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .navbar-default, .navbar-brand, .navebar, .navbar-fixed-top,.navbar, .top-nav-collapse {
-    background-color: #1C1F21;
+
     color: white;
     border-color: #1C1F21;
-
+    background-image: url("http://i.imgur.com/u3w7ZbW.png");
 }
 
 .intro-section {
