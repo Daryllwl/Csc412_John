@@ -436,17 +436,17 @@
                     <?php
                     if (isset($_POST['submit'])){
 
-                    $con = mysql_connect("localhost", "csc412", "csc412");
+                    $con = mysqli_connect("localhost", "csc412", "csc412");
                     if (!$con){
-                    die("can not connect: " . mysql_error());
+                    die("can not connect: " . mysqli_error());
                     }
                     
-                    mysql_select_db("csc412", $con);
+                    mysqli_select_db("csc412", $con);
                     
                     $sql="INSERT INTO dwlguests (Name,Quote) VALUES ('$_POST[Name]',('$_POST[Quote]')";
                     
-                    mysql_query($sql, $con);
-                    mysql_close($con);
+                    mysqli_query($sql, $con);
+                    mysqli_close($con);
                     }
                     ?>
                 </div>
