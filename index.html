@@ -441,9 +441,9 @@
                     die("can not connect: " . mysql_error());
                     }
                     
-                    mysql_select_db("dwlguests", $con);
+                    mysql_select_db("csc412", $con);
                     
-                    $sql="INSERT INTO dwlguests(Name,Quote) VALUES ('$_POST[Name]',('$_POST[Quote]')";
+                    $sql="INSERT INTO dwlguests (Name,Quote) VALUES ('$_POST[Name]',('$_POST[Quote]')";
                     
                     mysql_query($sql, $con);
                     mysql_close($con);
